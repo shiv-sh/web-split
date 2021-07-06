@@ -19,6 +19,7 @@ function App() {
             <Login />
           </Route>
           <ProtectedRoutes exact path='/main' component={Main} name="main" />
+          <Route path='/' render={() => (<Redirect to='/login' />)} />
         </Switch>
       </Router>
     </div>
