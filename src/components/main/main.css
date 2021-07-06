@@ -1,0 +1,75 @@
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-bar {
+display: flex;
+justify-content: space-between;
+}
+
+.web-1, .web-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+}
+
+.textbox {
+    width: 80%;
+}
+
+.textbox-input{
+    width: 80%;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+.textbox-input:focus{
+    border-color: aqua;
+    outline: none;
+}
+
+.web-split {
+    display: flex;
+    height: 100%;
+}
+
+.username {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.logout button {
+    border-radius: 5px;
+    padding: 4px;
+    background-color: aquamarine;
+}
+
+.logout button:hover{
+    cursor: pointer;
+}
+
+.togglebars{
+    display: none;
+}
+
+.toggle-div {
+    display: flex;
+    border: 1px solid;
+    position: absolute;
+    left: 39px;
+    background-color: aquamarine;
+    height: 50px;
+    width: auto;
+}
+
+@media(max-width:768px){
+    .username {
+      display:none;
+    }
+    .togglebars{
+        display: inline;
+    }
+  }
